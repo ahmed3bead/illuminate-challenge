@@ -1,0 +1,47 @@
+{
+    "name": "bitech/illuminate",
+    "description": "Illuminate — Bi-Tech Senior Laravel Hiring Challenge",
+    "keywords": ["cli", "challenge", "laravel"],
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "^12.17",
+        "laravel-zero/foundation": "^12.54",
+        "phpseclib/phpseclib": "~3.0"
+    },
+    "require-dev": {
+        "driftingly/rector-laravel": "^2.2",
+        "fakerphp/faker": "^1.23",
+        "illuminate/http": "^12.17",
+        "larastan/larastan": "^3.9",
+        "laravel-zero/framework": "^12.0.2",
+        "laravel/pint": "^1.29",
+        "mockery/mockery": "^1.6.12",
+        "pestphp/pest": "^3.8.4|^4.1.2",
+        "rector/rector": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "bin": ["builds/illuminate"]
+}
